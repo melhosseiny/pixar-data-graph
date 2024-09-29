@@ -23,8 +23,11 @@ class MovieAPI extends RESTDataSource {
 
   async getMovies(page) {
     let response = await this.get(
-      'company/3-pixar-animation-studios/movies',
-      { page }
+      'discover/movie',
+      {
+        page,
+        with_companies: 3
+      }
     );
     response.results = Array.isArray(response.results)
       ? response.results.map(movie => this.movieReducer(movie))
