@@ -1,6 +1,7 @@
 {
   "name": "pixar-data-graph",
   "version": "1.0.0",
+  "type": "module",
   "description": "Apollo GraphQL data graph for Pixar movies",
   "author": "Mostafa Elshamy",
   "private": true,
@@ -11,7 +12,7 @@
   },
   "scripts": {
     "test": "jest --passWithNoTests",
-    "start": "nodemon src/index.mjs",
+    "start": "nodemon src/index.js",
     "start:ci": "node src/index.js"
   },
   "dependencies": {
@@ -34,7 +35,7 @@
     "node-fetch": "^2.2.1"
   },
   "engines": {
-    "node": "14.x"
+    "node": "20.x"
   },
   "jest": {
     "testPathIgnorePatterns": [

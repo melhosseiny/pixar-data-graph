@@ -1,5 +1,8 @@
 import { RESTDataSource } from 'apollo-datasource-rest';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 const API_VERSION = 3;
 const API_KEY = process.env.MOVIEDB_API_KEY;
 
